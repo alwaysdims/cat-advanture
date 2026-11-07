@@ -1,0 +1,20 @@
+{
+  "result": "PASS",
+  "browser": "156.0.8078.81",
+  "emulated": true,
+  "checks": [
+    "Canvas 16:9, no overlap/overflow, touch targets >=44px: 320x568",
+    "Canvas 16:9, no overlap/overflow, touch targets >=44px: 390x844",
+    "Canvas 16:9, no overlap/overflow, touch targets >=44px: 844x390",
+    "Canvas 16:9, no overlap/overflow, touch targets >=44px: 667x375",
+    "Canvas 16:9, no overlap/overflow, touch targets >=44px: 768x1024",
+    "Canvas 16:9, no overlap/overflow, touch targets >=44px: 1024x768",
+    "Native CDP multitouch: hold right + jump + double jump, no third jump, touchcancel clears input",
+    "Pause while holding direction, resume and orientation reset touch input",
+    "Zoom key/wheel defaults blocked, Ctrl+F preserved, native pinch leaves viewport scale unchanged",
+    "Runtime trees, mushrooms and lanterns fully supported on all three maps",
+    "Touch navigation: help, settings, level select on small portrait, landscape and tablet",
+    "Identical multi-frame pinch increases scale on zoom-enabled control page"
+  ],
+  "errors": []
+}

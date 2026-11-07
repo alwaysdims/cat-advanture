@@ -1,0 +1,45 @@
+{
+  "log": [
+    "Responsive 1920x1080, 1366x768, 1024x600, 390x844; 16:9, no horizontal overflow: PASS",
+    "Menu, locked Level Select, help, native dialog focus, settings reload: PASS",
+    "Movement, fish score, jump, double jump limit, pause/resume, unlocked Web Audio: PASS",
+    "Coyote time and buffered landing jump using real physics fixtures: PASS",
+    "Enemy contact, 1.5s immunity, checkpoint, pit respawn, retained items, locked exit: PASS",
+    "Restart snapshot, Game Over, Retry, one canvas after scene restarts: PASS",
+    "Moving platform support + reversal and spike collision: PASS",
+    "Level 1 full keyboard route, no teleport/inventory edits: PASS",
+    "Level 2 full keyboard route, no teleport/inventory edits: PASS",
+    "Level 3 full keyboard route, no teleport/inventory edits: PASS",
+    "High score + unlock persisted after reload, Level Select starts fresh: PASS; observed mean frame 16.67 ms",
+    "Blocked storage handled without crash and visible warning: PASS",
+    "Failed required asset keeps recovery dialog; reload recovers: PASS"
+  ],
+  "levels": [
+    {
+      "level": 1,
+      "fish": 7,
+      "coins": 5,
+      "score": 295,
+      "hearts": 5,
+      "checkpoint": true
+    },
+    {
+      "level": 2,
+      "fish": 9,
+      "coins": 3,
+      "score": 560,
+      "hearts": 5,
+      "checkpoint": true
+    },
+    {
+      "level": 3,
+      "fish": 12,
+      "coins": 4,
+      "score": 980,
+      "hearts": 5,
+      "checkpoint": true
+    }
+  ],
+  "errors": [],
+  "warnings": []
+}

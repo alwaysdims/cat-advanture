@@ -1,0 +1,38 @@
+// Coordinates use the top-left of terrain; spawn/checkpoint/exit y is ground height.
+export const LEVELS = [
+  {
+    name: 'Lost Forest', subtitle: 'Langkah kecil di antara daun gugur', theme: 'forest', target: 5, width: 2720,
+    spawn: [90, 300], checkpoint: [1390, 300], exit: [2600, 300],
+    ground: [[0,300,570],[660,300,570],[1330,300,580],[2010,300,710]],
+    platforms: [[310,247,120],[840,242,128],[1120,232,100],[1550,247,120],[1800,232,110],[2200,242,130]],
+    moving: [], spikes: [],
+    fish: [[210,270],[380,219],[740,270],[920,214],[1100,270],[1450,270],[1620,219],[1770,270],[2140,270],[2410,270]],
+    coins: [[330,219],[430,219],[1170,204],[1850,204],[2250,214],[2310,214]],
+    enemies: [{type:'hedgehog',left:780,right:1080,y:288,speed:38},{type:'hedgehog',left:1630,right:1860,y:288,speed:45},{type:'hedgehog',left:2220,right:2460,y:288,speed:42}],
+    signs: [[140,300,'A / D   BERGERAK'],[460,300,'SPACE  LOMPAT  2x'],[1470,300,'BENDERA = CHECKPOINT']],
+  },
+  {
+    name: 'Mushroom Valley', subtitle: 'Cahaya kecil, lompatan lebih tinggi', theme: 'mushroom', target: 7, width: 3400,
+    spawn: [90,300], checkpoint: [1710,300], exit: [3270,300],
+    ground: [[0,300,510],[640,300,540],[1500,300,600],[2240,300,490],[2870,300,530]],
+    platforms: [[280,242,120],[730,237,120],[1010,217,110],[1560,242,110],[1850,227,130],[2360,237,100],[2630,212,100],[2970,232,130]],
+    moving: [{x:1250,y:277,width:100,left:1185,right:1395,speed:55}],
+    spikes: [[920,300,58],[1990,300,55],[2510,300,50]],
+    fish: [[210,270],[340,214],[690,270],[790,209],[1080,189],[1570,270],[1750,270],[1900,199],[2300,270],[2410,209],[2660,184],[2930,270],[3050,204]],
+    coins: [[300,214],[1040,189],[1610,214],[1950,199],[2690,184],[3000,204]],
+    enemies: [{type:'hedgehog',left:700,right:850,y:288,speed:48},{type:'bat',left:960,right:1140,y:135,speed:65},{type:'bat',left:1790,right:2060,y:135,speed:63},{type:'hedgehog',left:2310,right:2460,y:288,speed:48},{type:'bat',left:2940,right:3110,y:135,speed:68}],
+    signs: [[140,300,'IKUTI CAHAYA IKAN'],[1090,300,'TUNGGU PAPAN BERGERAK'],[1770,300,'LOMPAT LAGI DI UDARA']],
+  },
+  {
+    name: 'Way Back Home', subtitle: 'Satu senja lagi menuju rumah', theme: 'sunset', target: 10, width: 4160,
+    spawn: [90,300], checkpoint: [2090,300], exit: [4000,300],
+    ground: [[0,300,490],[630,280,520],[1490,300,510],[2040,300,560],[2750,280,490],[3380,300,780]],
+    platforms: [[260,237,110],[740,222,100],[1020,207,100],[1570,242,100],[1850,217,100],[2260,232,110],[2500,202,90],[2850,222,110],[3130,197,100],[3480,232,110],[3730,222,120]],
+    moving: [{x:1240,y:262,width:104,left:1160,right:1380,speed:65},{x:2610,y:267,width:90,left:2605,right:2660,speed:45}],
+    spikes: [[900,280,62],[1750,300,64],[2400,300,60],[3010,280,65],[3630,300,65]],
+    fish: [[200,270],[320,209],[680,250],[790,194],[1070,179],[1530,270],[1630,214],[1900,189],[2150,270],[2310,204],[2530,174],[2800,250],[2910,194],[3190,169],[3430,270],[3540,204],[3790,194],[3900,270]],
+    coins: [[280,209],[1050,179],[1870,189],[2280,204],[2550,174],[2880,194],[3160,169],[3510,204],[3760,194]],
+    enemies: [{type:'hedgehog',left:700,right:830,y:268,speed:56},{type:'crow',left:970,right:1140,y:142,speed:85},{type:'crow',left:1570,right:1960,y:155,speed:82},{type:'hedgehog',left:2240,right:2360,y:288,speed:52},{type:'crow',left:2810,right:3220,y:144,speed:90},{type:'hedgehog',left:3440,right:3560,y:288,speed:55},{type:'crow',left:3690,right:3840,y:148,speed:87}],
+    signs: [[140,300,'RUMAH MENUNGGUMU'],[1050,280,'NAIKI JEMBATAN BERGERAK'],[2170,300,'SEDIKIT LAGI, MOCHI!']],
+  },
+];
